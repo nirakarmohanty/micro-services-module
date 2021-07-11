@@ -1,0 +1,10 @@
+package com.coding.tutor.frontdesk.proxy.bo;
+
+public class BillDeskBO {
+	
+	private long id;
+	private long patientId;
+	boolean status;
+	String statusCode;
+
+}

@@ -1,0 +1,9 @@
+package src.coding.tutor.pathology.service.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import src.coding.tutor.pathology.service.entity.Pathology;
+
+public interface PathologyRepository extends JpaRepository<Pathology, Long>{
+
+}

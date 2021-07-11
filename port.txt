@@ -1,0 +1,17 @@
+cloud-config-server
+	doctor.service-8081
+	patient.service-8082
+	cloud-config-8083
+-----------------------------------
+
+response-template
+	patient-service-8084
+	pathology-service-8085
+
+
+--------------------------------
+
+eureka-naming-server
+	naming-server- 8761
+	patient-service-8084
+	billing-service-8086

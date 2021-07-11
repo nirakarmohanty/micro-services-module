@@ -1,0 +1,8 @@
+package com.coding.tutor.billdesk.service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BillDeskService {
+
+}

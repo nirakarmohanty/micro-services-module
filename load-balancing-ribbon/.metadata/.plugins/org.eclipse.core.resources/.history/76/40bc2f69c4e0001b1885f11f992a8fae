@@ -1,0 +1,8 @@
+package com.coding.tutor.frontdesk.controller;
+
+public class FrontDeskSerrviceController {
+
+	public String sayhello() {
+		return "Hello Frontdesk Service";
+	}
+}

@@ -1,0 +1,12 @@
+package com.coding.tutor.billdesk.service.entity;
+
+import lombok.AllArgsConstructor;
+
+@Data
+@AllArgsConstructor
+public class BillDesk {
+	private long id;
+	boolean status;
+	String statusCode;
+
+}

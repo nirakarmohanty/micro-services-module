@@ -1,0 +1,11 @@
+package com.coding.tutor.frontdesk.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class FrontDeskSerrviceController {
+
+	@GetMapping(value = "/helloFrontDesk")
+	public String sayhello() {
+		return "Hello Frontdesk Service";
+	}
+}

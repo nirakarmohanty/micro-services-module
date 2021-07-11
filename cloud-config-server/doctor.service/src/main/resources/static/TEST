@@ -1,0 +1,23 @@
+
+INSERT INTO DOCTOR 
+(ID,DOCTOR_ID,DOCTORNAME,EXPERIENCE) 
+values(1,7,'Krish','12')
+
+===============================
+
+{
+    "id": 1,
+    "doctorname": "Krish",
+    "doctorId": "7",
+    "experience": 12
+}
+
+==================================
+
+http://localhost:8081/doctor/search?id=2
+http://localhost:8081/doctor/save
+
+======================================
+1. Need to add client config in pom.xml
+2. Need to add application-name of properties file present in git.
+3. Need to import config import of configserver:http://localhost:8083

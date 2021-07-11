@@ -1,0 +1,11 @@
+server:
+  port: 8088
+  
+spring:  application:    name: billing-service
+  
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    enabled: true
+    path: /swagger-index.doc

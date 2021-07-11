@@ -1,0 +1,5 @@
+package com.coding.tutor.billdesk.service.repository;
+
+public interface BillDeskServiceRepository {
+
+}

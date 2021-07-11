@@ -1,0 +1,10 @@
+package com.coding.tutor.billdesk.service.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BillDeskServiceDAO {
+
+	private BillDeskServiceRepository billDeskServiceRepo;
+	
+}

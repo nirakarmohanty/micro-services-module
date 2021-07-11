@@ -1,0 +1,17 @@
+package com.coding.tutor.frontdesk.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+
+@SpringBootApplication(scanBasePackages = { "com.coding.tutor.frontdesk" })
+//@EnableJpaRepositories("src.coding.tutor.doctor.service.repository")
+//@EntityScan("src.coding.tutor.doctor.*")
+public class FrontdeskServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FrontdeskServiceApplication.class, args);
+	}
+
+}

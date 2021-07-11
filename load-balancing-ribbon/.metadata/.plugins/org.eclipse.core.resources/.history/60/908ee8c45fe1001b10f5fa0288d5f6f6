@@ -1,0 +1,17 @@
+package com.coding.tutor.billdesk.service;
+
+import java.util.Random;
+import java.util.RandomAccess;
+
+import org.springframework.stereotype.Component;
+
+import com.coding.tutor.billdesk.service.entity.BillDesk;
+
+@Component
+public class BillDeskService {
+
+	
+	public BillDesk save(long id) {
+		return new BillDesk(id,Boolean.TRUE,"asdf-1234-nhgs45");
+	}
+}

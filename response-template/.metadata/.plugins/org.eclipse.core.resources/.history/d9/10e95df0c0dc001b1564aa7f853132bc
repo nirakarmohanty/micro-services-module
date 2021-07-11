@@ -1,0 +1,5 @@
+package src.coding.tutor.patient.service.dao;
+
+public class PatientServiceDAO {
+
+}

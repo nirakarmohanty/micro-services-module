@@ -1,0 +1,19 @@
+package com.coding.tutor.billdesk.service.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@SpringBootApplication
+public class BilldeskApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BilldeskApplication.class, args);
+	}
+
+	@GetMapping(name = "/sayHello")
+	public String sayHello() {
+		return "hello Front desk service!";
+	}
+
+}

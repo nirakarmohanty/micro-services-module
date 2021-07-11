@@ -1,0 +1,14 @@
+package com.coding.tutor.billdesk.service.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/frontdesk")
+public class FrontDeskController {
+	
+	public String sayHello() {
+		return "hello Front desk service!"
+	}
+
+}

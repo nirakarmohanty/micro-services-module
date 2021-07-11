@@ -1,0 +1,15 @@
+package src.coding.tutor.patient.service.dao;
+
+import org.springframework.stereotype.Component;
+
+import src.coding.tutor.patient.service.entity.Patient;
+
+@Component
+public class PatientServiceDAO {
+
+	public Patient savePatient(Patient patient) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

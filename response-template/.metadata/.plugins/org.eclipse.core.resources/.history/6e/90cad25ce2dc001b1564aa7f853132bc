@@ -1,0 +1,8 @@
+package src.coding.tutor.patient.service.proxy;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "pathology-service")
+public interface PathologyServiceProxy {
+
+}

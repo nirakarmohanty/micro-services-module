@@ -1,0 +1,15 @@
+package src.coding.tutor.patient.service.bo;
+
+public class PatientDetail {
+	
+	private long id;
+	private String name;
+	private int age;
+	private String sex;
+	
+	private String name;
+	private String address;
+	private String testType;
+	
+
+}

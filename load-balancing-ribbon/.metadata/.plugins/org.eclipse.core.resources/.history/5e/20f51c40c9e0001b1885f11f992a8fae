@@ -1,0 +1,28 @@
+package com.coding.tutor.frontdesk.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.coding.tutor.frontdesk.entity.FrontDesk;
+
+@RestController
+@RequestMapping("/frontdesk")
+public class FrontDeskSerrviceController {
+
+	FrontDeskService frontDeskSvc;
+	
+	@GetMapping(value = "/hello")
+	public String sayhello() {
+		return "Hello Frontdesk Service";
+	}
+	@PostMapping(value = "/saveFrontDesk")
+	public FrontDesk save(@RequestBody FrontDesk requestObject) {
+		
+		return frontDeskSvc.saveFrontDeskData(requestObject);
+		
+	}
+}

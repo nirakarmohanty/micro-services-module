@@ -1,0 +1,5 @@
+package com.coding.tutor.frontdesk.proxy;
+
+public class BillingDeskService {
+
+}

@@ -1,0 +1,13 @@
+package com.coding.tutor.frontdesk.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class FrontDesk {
+	
+	private long id;
+	private string patientname;
+	private string deasese;
+	  private int billAmount;
+
+}

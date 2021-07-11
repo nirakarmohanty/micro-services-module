@@ -1,0 +1,14 @@
+package com.coding.tutor.billdesk.service;
+
+import org.springframework.stereotype.Component;
+
+import com.coding.tutor.billdesk.service.entity.BillDesk;
+
+@Component
+public class BillDeskService {
+
+	
+	public BillDesk save(long id) {
+		return id;
+	}
+}

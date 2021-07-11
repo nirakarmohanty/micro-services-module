@@ -1,0 +1,18 @@
+package src.coding.tutor.patient.service.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import src.coding.tutor.patient.service.entity.Patient;
+
+@Component
+public class PatientServiceDAO {
+
+	@Autowired
+	private PatientSvcRepository patientSvcRepo;
+	
+	public Patient savePatient(Patient patient) {
+		return patientRepo.save;
+	}
+
+}

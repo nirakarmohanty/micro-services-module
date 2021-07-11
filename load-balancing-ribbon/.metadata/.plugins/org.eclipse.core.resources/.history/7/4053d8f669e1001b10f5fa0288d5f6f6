@@ -1,0 +1,32 @@
+package com.coding.tutor.frontdesk.servcie;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.coding.tutor.frontdesk.dao.FrontDeskDAO;
+import com.coding.tutor.frontdesk.entity.FrontDesk;
+import com.coding.tutor.frontdesk.proxy.BillingDeskServiceProxy;
+import com.coding.tutor.frontdesk.proxy.bo.BillDeskBO;
+
+@Component
+public class FrontDeskService {
+
+	@Autowired
+	private FrontDeskDAO dao;
+	
+	@Autowired
+	BillingDeskServiceProxy proxy;
+	
+	public FrontDesk saveFrontDeskData(FrontDesk frontDesk) {
+		//Data
+		dao.saveFrontDeskData(frontDesk);
+		// Bill DeskService call 
+		BillDeskBO billDeskByID = proxy.getBillDeskByID(frontDesk.getId());
+		return null;
+	}
+
+	public FrontDesk getFrontDesk(Long id) {
+		
+		return dao.getFrontDesk(id);
+	}
+}

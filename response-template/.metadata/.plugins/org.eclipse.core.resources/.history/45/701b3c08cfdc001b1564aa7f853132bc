@@ -1,0 +1,39 @@
+package src.coding.tutor.patient.service.svc;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
+
+import src.coding.tutor.patient.service.bo.PatientDetail;
+import src.coding.tutor.patient.service.dao.PatientServiceDAO;
+import src.coding.tutor.patient.service.entity.Patient;
+
+@Component
+public class PatientService {
+	
+	@Autowired
+	private PatientServiceDAO patientDao;
+
+	public Patient savePatient(Patient patient) {
+		return patientDao.savePatient(patient);
+	}
+
+	public PatientDetail getPatientWithPathologyDetails(String name) {
+		Patient patientDetails = patientDao.getPatientDetails(name);
+		
+		Map<String,Long> uriVariables=new HashMap();
+		uriVariables.put("id", name);
+		
+		new RestTemplate().getForEntity("http://localhost:8085/pathology/search?id=", 
+				PatientDetail.class, uriVariables)
+		PatientDetail patientDetail= new PatientDetail();
+		patientDetail.setName(patientDetails.getName());
+		patientDetail.setAge(patientDetails.getAge());
+		patientDetail.setId(patientDetails.getId());
+		return patientDetail;
+	}
+
+}

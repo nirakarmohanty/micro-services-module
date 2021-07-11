@@ -1,0 +1,7 @@
+# Getting Started
+
+### Reference Documentation
+
+Eureka Naming server URL - http://localhost:8086/
+Patient svc Swagger - http://localhost:8084/swagger-ui.html
+Billing svc Swagger - http://localhost:8086/swagger-ui.html

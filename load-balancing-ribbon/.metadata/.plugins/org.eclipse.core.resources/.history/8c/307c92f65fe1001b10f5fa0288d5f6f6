@@ -1,0 +1,5 @@
+package com.coding.tutor.billdesk.service.dao;
+
+public class BillDeskServiceDAO {
+
+}

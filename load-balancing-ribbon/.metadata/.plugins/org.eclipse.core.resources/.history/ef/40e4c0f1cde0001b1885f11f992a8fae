@@ -1,0 +1,8 @@
+package com.coding.tutor.billdesk.service.entity;
+
+public class BillDesk {
+	private long id;
+	  boolean status; 
+	   String statusCode; 
+
+}

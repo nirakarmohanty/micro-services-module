@@ -1,0 +1,6 @@
+package src.coding.tutor.patient.service.bo;
+
+public class PatientDetail {
+	
+
+}

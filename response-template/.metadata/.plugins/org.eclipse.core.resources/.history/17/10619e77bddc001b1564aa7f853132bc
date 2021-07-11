@@ -1,0 +1,5 @@
+package src.coding.tutor.pathology.service.dao;
+
+public class PathologyDAO {
+
+}

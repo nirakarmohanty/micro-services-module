@@ -1,0 +1,8 @@
+package src.coding.tutor.pathology.service.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class PathologyDAO {
+
+}

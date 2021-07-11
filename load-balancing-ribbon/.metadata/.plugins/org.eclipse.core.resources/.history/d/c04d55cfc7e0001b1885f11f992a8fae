@@ -1,0 +1,10 @@
+package com.coding.tutor.frontdesk.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class FrontDesk {
+	
+	
+
+}

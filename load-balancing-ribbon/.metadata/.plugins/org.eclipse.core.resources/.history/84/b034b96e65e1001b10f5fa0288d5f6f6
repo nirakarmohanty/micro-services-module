@@ -1,0 +1,28 @@
+package com.coding.tutor.billdesk.service;
+
+import java.sql.Time;
+import java.util.Random;
+import java.util.RandomAccess;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.coding.tutor.billdesk.service.dao.BillDeskServiceDAO;
+import com.coding.tutor.billdesk.service.entity.BillDesk;
+
+@Component
+public class BillDeskService {
+
+	@Autowired
+	private BillDeskServiceDAO billDeskSvcDao;
+	
+
+	public BillDesk saveBillDesk(long patientId) {
+		BillDesk billDesk= new BillDesk();
+		billDesk.setPatientId(patientId);
+		billDesk.setStatus(Boolean.TRUE);
+		billDesk.setStatusCode("asdf-0987-dfgh-1234-wert"+ Time.valueOf(time));
+		RandomStringUtils.random(8, true, true);
+		return billDeskSvcDao.saveBillDesk(billDesk);
+	}
+}

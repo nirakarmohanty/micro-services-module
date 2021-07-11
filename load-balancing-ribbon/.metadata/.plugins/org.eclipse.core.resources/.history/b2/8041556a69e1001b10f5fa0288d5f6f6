@@ -1,0 +1,9 @@
+package com.coding.tutor.frontdesk.proxy;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "billing-service", url = "localhost:8089/")
+public interface BillingDeskServiceProxy {
+	
+
+}

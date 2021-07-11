@@ -1,0 +1,8 @@
+package com.coding.tutor.frontdesk.proxy.bo;
+
+import com.coding.tutor.frontdesk.entity.FrontDesk;
+
+public class FrontDeskBO {
+	private FrontDesk frontDesk;
+	private BillDeskBO billDeskBO;
+}

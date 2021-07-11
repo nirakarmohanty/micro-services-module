@@ -1,0 +1,25 @@
+package src.coding.tutor.patient.service.bo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class PatientDetail {
+	
+	private String patholgoyName;
+	private String pathologyAddress;
+	private String testType;
+	
+	
+	private long id;
+	private String name;
+	private int age;
+	private String sex;
+	
+	
+	
+
+}

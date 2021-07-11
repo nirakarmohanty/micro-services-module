@@ -1,0 +1,5 @@
+package com.coding.tutor.billdesk.service.entity;
+
+public class BillDeskEntity {
+
+}

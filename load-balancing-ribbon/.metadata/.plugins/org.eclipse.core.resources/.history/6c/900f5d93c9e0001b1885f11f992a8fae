@@ -1,0 +1,15 @@
+package com.coding.tutor.frontdesk.dao;
+
+import org.springframework.stereotype.Component;
+
+import com.coding.tutor.frontdesk.entity.FrontDesk;
+
+@Component
+public class FrontDeskDAO {
+
+	public FrontDesk saveFrontDeskData(FrontDesk frontDesk) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

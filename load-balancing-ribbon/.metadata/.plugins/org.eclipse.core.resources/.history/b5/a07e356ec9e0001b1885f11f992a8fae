@@ -1,0 +1,14 @@
+package com.coding.tutor.frontdesk.servcie;
+
+import org.springframework.stereotype.Component;
+
+import com.coding.tutor.frontdesk.entity.FrontDesk;
+
+@Component
+public class FrontDeskService {
+
+	public FrontDesk saveFrontDeskData(FrontDesk requestObject) {
+	
+		return null;
+	}
+}

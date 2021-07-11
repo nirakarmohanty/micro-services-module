@@ -1,0 +1,8 @@
+1625396195199	Delete element
+1625396344865	Delete element
+1625396354038	Delete element
+1625396592079	Rename package 'src.coding.tutor.pathology.service'
+1625398270180	Rename package 'src.coding.tutor.patient.service'
+1625398279577	Rename package 'src.coding.tutor.patient.service.controller'
+1625398313467	Rename type 'PatientController'
+1625399357897	Rename method 'savePatholog'

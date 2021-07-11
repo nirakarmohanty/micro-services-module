@@ -1,0 +1,13 @@
+package src.coding.tutor.pathology.service.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Pathology {
+	@Id
+	private long id;
+	private String name;
+	private String address;
+	private String testType;
+}

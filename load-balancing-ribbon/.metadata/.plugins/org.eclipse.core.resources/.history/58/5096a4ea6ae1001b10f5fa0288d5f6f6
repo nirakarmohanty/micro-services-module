@@ -1,0 +1,14 @@
+package com.coding.tutor.frontdesk.proxy;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import com.coding.tutor.frontdesk.proxy.bo.BillDeskBO;
+
+@FeignClient(name = "billing-service", url = "localhost:8089/billingSvc")
+public interface BillingDeskServiceProxy {
+	
+	@GetMapping("/getBillDeskDetails/{patientId}")
+	public BillDeskBO getBillDeskByID(@PathVariable long patientId);
+}
